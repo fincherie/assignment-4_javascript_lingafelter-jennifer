@@ -1,4 +1,4 @@
-//*var myName = {
+/*var myName = {
     firstName: "Jennifer",
     lastName: "Lingafelter",
     howdy: function () {
@@ -7,21 +7,63 @@
 }
 
 myName.howdy();
+*/
 
-var numba = prompt ("Enter your string");
-if (numba.length<7) {
-window.alert ("What a short little word");
+//Trying again to create function howdy
+function howdy () {
+  var firstName = "Jennifer";
+  var lastName = "Lingafelter";
+  var fullName = firstName + " " + lastName;
+  return (fullName + " " + "says Hi");
 }
-else if (numba.length >7) {
-  window.alert("I'm sorry, but that's too many to count.");
-}
-else {
-  window.alert("That perfect!");
-}
+console.log (howdy ());
 
+//numba function with 7
+
+var numba = function(string) {
+  if (string.length < 7) {
+  return ("What a short little word");
+}
+  else if (string.length > 7) {
+  return ("I'm sorry, but that's too many to count.")
+}
+  else {
+  return ("That perfect!");
+}
+};
+numba("7");
+
+//numba function with seventy
+
+var numba = function(string) {
+  if (string.length < 7) {
+  return ("What a short little word");
+}
+  else if (string.length > 7) {
+  return ("I'm sorry, but that's too many to count.")
+}
+  else {
+  return ("That perfect!");
+}
+};
+numba("seventy");
+
+//numba function with university
+
+var numba = function(string) {
+  if (string.length < 7) {
+  return ("What a short little word");
+}
+  else if (string.length > 7) {
+  return ("I'm sorry, but that's too many to count.")
+}
+  else {
+  return ("That perfect!");
+}
+};
+numba("university");
 
 function inception (display, favMovie) {
- display (favMovie);
- favMovie = "Dead Pool"
+   return (favMovie + " is a fantastic movie.")
 }
- console.log (favMovie + "is a fantastic movie.");
+inception ("movie", "Dead Pool");
