@@ -64,6 +64,9 @@ var numba = function(string) {
 numba("university");
 
 function inception (display, favMovie) {
-   return (favMovie + " is a fantastic movie.")
+  display(favMovie);
 }
-inception ("movie", "Dead Pool");
+function movieName(movie) {
+  console.log (movie + " is a fantastic movie.")
+}
+inception (movieName, "Dead Pool");
